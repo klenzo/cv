@@ -145,6 +145,7 @@ export interface ResumeConfig {
     title: string
     description: string
   }
+  summary?: LocalizedStringArray,
   languages: {
     default: string
     available: string[]

@@ -5,10 +5,14 @@ import { ExperienceItem } from './ExperienceItem'
 import { ProjectItem } from './ProjectItem'
 import { EducationItem } from './EducationItem'
 
+
 export function MainContent() {
   const { resolve, resolveArray } = useTranslation()
-  const { personal, experiences, projects, education, labels } = resumeConfig
+  const { personal, summary, experiences, projects, education, labels } = resumeConfig
   const [expandedExp, setExpandedExp] = useState<string | null>(null)
+
+  const lang = resumeConfig.languages.default
+  const summaryList = resumeConfig.summary?.[lang] ?? []
 
   const toggleExp = (id: string) => {
     setExpandedExp(expandedExp === id ? null : id)
@@ -29,12 +33,20 @@ export function MainContent() {
         <h1 className="text-3xl md:text-4xl font-bold tracking-[0.15em] text-resume-text">
           {personal.name.toUpperCase()}
         </h1>
-        <p className="text-base text-resume-text-secondary tracking-widest mt-2">
+        <p className="text-2xl text-resume-text-secondary tracking-widest mt-2">
           {resolve(personal.title).toUpperCase()}
         </p>
         {personal.subtitle && (
           <p className="text-sm text-resume-primary mt-1">{resolve(personal.subtitle)}</p>
         )}
+      </div>
+
+      {/* Summary */}
+      <div className="mb-8 text-justify">
+        {/* <p className="text-sm text-resume-text-secondary">{resolve(summary)}</p> */}
+          {summaryList && summaryList.map((line, i) => (
+            <p className="text-sm text-resume-text-secondary" key={i}>{line}</p>
+          ))}
       </div>
 
       {/* Experiences */}
