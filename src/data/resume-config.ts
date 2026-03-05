@@ -5,17 +5,23 @@ export const resumeConfig: ResumeConfig = {
     name: 'Messaoud HARROUZ',
     photoBackEmoji: '🚀',
     title: {
-      fr: 'Tech Lead / Lead - Développeur Web',
+      fr: 'Senior Software Engineer - Développeur Web PHP',
     },
     subtitle: {
-      fr: '+7 ans d\'expérience — PHP / Laravel / WordPress – Automation & AI',
+      fr: 'PHP · Laravel · WordPress · SaaS · Automation · AI',
     },
     location: 'Lyon (Saint-Priest), France',
   },
 
   seo: {
-    title: 'Messaoud Harrouz — Developer Tech Lead - PHP / Laravel / WordPress',
+    title: 'Messaoud Harrouz - Developer Tech Lead - PHP / Laravel / WordPress',
     description: 'Tech Lead PHP spécialisé Laravel, WordPress et TMA.',
+  },
+
+  summary: {
+    fr: [ //
+      'Senior Software Engineer spécialisé backend avec plus de 9 ans d’expérience en développement d’applications web et plateformes SaaS, expert PHP, Laravel et WordPress, avec forte expertise en maintenance applicative (TMA), automatisation de processus via n8n et intégration d’API d’intelligence artificielle.',
+    ]
   },
 
   languages: {
@@ -26,7 +32,7 @@ export const resumeConfig: ResumeConfig = {
 
   contact: [
     { type: 'linkedin', label: 'H. Messaoud', href: 'https://www.linkedin.com/in/messaoud-harrouz/' },
-    { type: 'github', label: 'CV Sur GitHub', href: 'https://klenzo.github.io/cv/' },
+    { type: 'github', label: 'CV sur GitHub', href: 'https://klenzo.github.io/cv/' },
     { type: 'location', label: 'Lyon (Saint-Priest), France' },
   ],
 
@@ -47,7 +53,11 @@ export const resumeConfig: ResumeConfig = {
         { name: 'Laravel' },
         { name: 'WordPress' },
         { name: 'WooCommerce' },
-        { name: 'Symfony (junior)' },
+        { name: 'REST API' },
+        { name: 'Architecture MVC' },
+        { name: 'DDD (Domain Driven Design)' },
+        { name: 'SOLID' },
+        { name: 'Symfony' },
       ],
     },
     {
@@ -59,8 +69,35 @@ export const resumeConfig: ResumeConfig = {
         { name: 'SCSS / Less' },
         { name: 'Vue.js' },
         { name: 'JavaScript' },
-        { name: 'React (IA)' },
         { name: 'Livewire' },
+        { name: 'React (IA)' },
+      ],
+    },
+    {
+       title: { fr: 'CMS & Platforms' },
+      type: "badges",
+      items: [
+        { name: 'WordPress' },
+        { name: 'WooCommerce' },
+        { name: 'ACF / CPT' },
+        { name: 'Shopify' },
+        { name: 'PrestaShop' },
+        { name: 'Magento' },
+      ],
+    },
+    {
+      title: { fr: 'AI & Automation' },
+      type: 'badges',
+      items: [
+        { name: 'n8n' },
+        { name: 'OpenAI API' },
+        { name: 'Claude API' },
+        { name: 'Cursor AI' },
+        { name: 'GitHub Copilot' },
+        { name: 'Prompt Engineering' },
+        { name: 'AI Agents' },
+        { name: 'Workflow Automation' },
+        { name: 'API integrations' },
       ],
     },
     {
@@ -124,27 +161,31 @@ export const resumeConfig: ResumeConfig = {
       id: 'ortyz',
       company: { fr: 'ORTYZ' },
       role: { fr: 'Président / Développeur web freelance' },
-      type: { fr: 'Freelance' },
+      type: { fr: 'Freelance - SAS' },
       period: { fr: 'Août 2022 - Présent' },
       description: {
-        fr: 'Création de sites et applications web sur mesure pour divers clients.',
+        fr: 'Développeur et architecte d\'applications web PHP/Laravel avec plus de 9 ans d\'expérience. Spécialisé dans création de sites web, la conception d\'applications métiers, l\'automatisation de workflows via n8n et l\'intégration d\'API d\'intelligence artificielle pour optimiser les processus clients,  pour TPE/PME, startups et indépendants.',
       },
-      techs: ['PHP', 'Laravel', 'WordPress', 'MySQL', 'Docker', 'Linux'],
+      techs: ['PHP','Laravel','WordPress','MySQL','Docker','Linux','Claude AI','Cursor AI','Bolt', 'Emergent SH','n8n','OpenAI API'],
       isHighlighted: true,
       details: {
         context: {
-          fr: 'Agence web indépendante spécialisée dans le développement web et les applications sur mesure.',
+          fr: 'Développeur et consultant freelance spécialisé dans le développement d\'applications web sur mesure (PHP / Laravel / WordPress), l\'automatisation de workflows avec n8n et l\'intégration d\'API d\'intelligence artificielle.',
         },
         tasks: {
           fr: [
             'Analyse des besoins clients et cadrage technique',
             'Conception et développement d\'applications web Laravel',
             'Création et refonte de sites WordPress',
+            'Automatisation de processus métiers via workflows n8n',
+            'Intégration d\'API d\'IA générative (OpenAI, Claude)',
+            'Création d\'agents IA pour génération de contenu, automatisation marketing et traitement de données',
+            'Optimisation des processus clients via automatisation et intégration API',
             'Gestion de projet, chiffrage et relation client',
           ],
         },
         env: {
-          fr: 'PHP / Laravel / WordPress / MySQL / Docker / Linux',
+          fr: 'PHP / Laravel / WordPress / MySQL / Docker / Linux / n8n / OpenAI API / Claude API'
         },
       },
     },
@@ -156,13 +197,13 @@ export const resumeConfig: ResumeConfig = {
       type: { fr: 'Freelance' },
       period: { fr: 'Juin 2022 - Décembre 2024' },
       description: {
-        fr: 'TMA + développement applicatif — réduction des incidents de 70%',
+        fr: 'TMA + développement applicatif - réduction des incidents de 70%',
       },
       techs: ['PHP', 'Laravel', 'SQL Server', 'MySQL', 'Docker', 'Linux'],
       isHighlighted: true,
       details: {
         context: {
-          fr: 'Mission au sein d\'une équipe de développement sur des applications métiers.',
+          fr: 'Mission au sein d’une équipe de développement (RUN & BUILD) sur des applications métiers : développement backend PHP/Laravel, maintenance applicative (TMA), évolution de fonctionnalités et support N3.',
         },
         tasks: {
           fr: [
