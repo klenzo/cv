@@ -8,7 +8,7 @@ export const resumeConfig: ResumeConfig = {
       fr: 'Tech Lead / Lead - Développeur Web',
     },
     subtitle: {
-      fr: '+7 ans d\'expérience — PHP / Laravel / WordPress',
+      fr: '+7 ans d\'expérience — PHP / Laravel / WordPress – Automation & AI',
     },
     location: 'Lyon (Saint-Priest), France',
   },
@@ -26,7 +26,6 @@ export const resumeConfig: ResumeConfig = {
 
   contact: [
     { type: 'linkedin', label: 'H. Messaoud', href: 'https://www.linkedin.com/in/messaoud-harrouz/' },
-    { type: 'website', label: 'Ortyz SAS', href: 'https://ortyz.com' },
     { type: 'github', label: 'CV Sur GitHub', href: 'https://klenzo.github.io/cv/' },
     { type: 'location', label: 'Lyon (Saint-Priest), France' },
   ],
