@@ -5,12 +5,12 @@ export const resumeConfig: ResumeConfig = {
     name: 'Messaoud HARROUZ',
     photoBackEmoji: '🚀',
     title: {
-      fr: 'Senior Software Engineer - Développeur Web PHP',
+      fr: 'Tech Lead - Développeur Web Expert PHP',
     },
     subtitle: {
       fr: 'PHP · Laravel · WordPress · SaaS · Automation · AI',
     },
-    location: 'Lyon (Saint-Priest), France',
+    location: 'Lyon, France',
   },
 
   seo: {
@@ -33,7 +33,7 @@ export const resumeConfig: ResumeConfig = {
   contact: [
     { type: 'linkedin', label: 'H. Messaoud', href: 'https://www.linkedin.com/in/messaoud-harrouz/' },
     { type: 'github', label: 'CV sur GitHub', href: 'https://klenzo.github.io/cv/' },
-    { type: 'location', label: 'Lyon (Saint-Priest), France' },
+    { type: 'location', label: 'Lyon, France' },
   ],
 
   skills: [
