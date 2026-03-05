@@ -80,7 +80,7 @@ export function ExperienceItem({
           )}
         >
           <div className="w-20 flex-shrink-0">
-            <span className="text-sm font-bold text-resume-primary">{year}</span>
+            <span className="text-xs font-bold text-resume-primary">{year}</span>
           </div>
 
           <div className="flex-1 min-w-0 relative">
@@ -128,7 +128,7 @@ export function ExperienceItem({
               exit={{ opacity: 0, height: 0 }}
               className="overflow-hidden"
             >
-              <div className="ml-24 mt-2 mb-4 p-4 bg-resume-bg rounded-lg border border-resume-primary/20">
+              <div className="mt-2 mb-4 p-4 bg-resume-bg rounded-lg border border-resume-primary/20">
                 <ExperienceDetailsContent
                   context={details.context}
                   tasks={details.tasks}

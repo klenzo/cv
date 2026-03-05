@@ -8,6 +8,7 @@ import { SidebarSection } from './SidebarSection'
 import { ContactItem } from './ContactItem'
 import { SkillCategory } from './SkillCategory'
 import { TechBadge } from './TechBadge'
+import ContactReveal from './ContactReveal'
 
 const PHOTO_ANIMATION_DURATION = 0.8
 
@@ -90,9 +91,20 @@ export function Sidebar() {
       {/* Contact */}
       <SidebarSection title={resolve(labels.sections.contact)}>
         <div className="space-y-3">
-          {contact.map((item) => (
-            <ContactItem key={`${item.type}-${item.label}`} type={item.type} label={item.label} href={item.href} />
-          ))}
+
+          <ContactReveal />
+
+          {contact
+            .filter((item) => item.type !== 'phone' && item.type !== 'email')
+            .map((item) => (
+              <ContactItem
+                key={`${item.type}-${item.label}`}
+                type={item.type}
+                label={item.label}
+                href={item.href}
+              />
+            ))}
+
         </div>
       </SidebarSection>
 
@@ -110,11 +122,14 @@ export function Sidebar() {
                 </div>
               )}
               {category.type === 'text' && (
-                <p className="text-xs text-resume-text-secondary">
-                  {category.items
-                    .map((item) => (typeof item.name === 'string' ? item.name : resolve(item.name)))
-                    .join(', ')}
-                </p>
+                <div className="text-xs text-resume-text-secondary">
+                  {category.items.map((item, i) => (
+                    <div key={i}>
+                      {typeof item.name === 'string' ? item.name : resolve(item.name)}
+                    </div>
+                  ))}
+                </div>
+
               )}
               {category.type === 'languages' && (
                 <div className="flex items-center gap-3 text-sm flex-wrap">
