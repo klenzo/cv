@@ -8,7 +8,7 @@ import { EducationItem } from './EducationItem'
 
 export function MainContent() {
   const { resolve, resolveArray } = useTranslation()
-  const { personal, summary, experiences, projects, education, labels } = resumeConfig
+  const { personal, experiences, projects, education, labels } = resumeConfig
   const [expandedExp, setExpandedExp] = useState<string | null>(null)
 
   const lang = resumeConfig.languages.default
@@ -44,7 +44,7 @@ export function MainContent() {
       {/* Summary */}
       <div className="mb-8 text-justify">
         {/* <p className="text-sm text-resume-text-secondary">{resolve(summary)}</p> */}
-          {summaryList && summaryList.map((line, i) => (
+          {summaryList.map((line, i) => (
             <p className="text-sm text-resume-text-secondary" key={i}>{line}</p>
           ))}
       </div>
